@@ -1,0 +1,72 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    color: #eee;
+}
+
+body .black-bg{
+    background-color: #101010;
+}
+
+body .dark-bg{
+    background-color: #141414;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.bg-header{
+    background-image: url('../../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #fff;
+}
+
+.overlay::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,.60);
+}
+
+.overlay .container{
+    position: relative;
+    z-index: 2;
+    transform: translateY(80%);
+}
+
+.about-img{
+    max-width: 100%;
+    box-shadow: -10px 10px #003663;
+
+}
+
+.serv-bg .serv{
+    position: relative;
+    z-index: 2;
+}
+
+.serv-bg::before{
+    background-color: #003663;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.serv-hr{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid #fff;
+    width: 1.5em;
+    margin-left: 0px;
+
+}
