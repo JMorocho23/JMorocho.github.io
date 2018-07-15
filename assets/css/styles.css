@@ -36,9 +36,8 @@ body .dark-bg{
 }
 
 .overlay .container{
-    position: relative;
     z-index: 2;
-    transform: translateY(80%);
+    padding-top: 15%
 }
 
 .about-img{
@@ -118,6 +117,34 @@ body .dark-bg{
     height: 20em;
 }
 
+.cnt-ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#cnt-msg{
+    height: 6em;
+    width: 100%;
+}
+
+.ctn-input{
+    border: 1px solid rgba(255,255,255,.40);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 8px;
+    padding: 0 20px;
+    line-height: 48px;
+    height: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    width: 100%;
+    background-color: transparent;
+    letter-spacing: .10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
 
 /* Footer */
 .footer-basic {
