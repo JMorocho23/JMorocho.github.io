@@ -7,27 +7,55 @@
 
     <title>Juan Morocho | Web Developer</title>
 
-
+    <link rel="icon" type="image/x-icon" href="blue_icon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets//css//styles.css">
 </head>
 <body>
 
-    <div class="bg-header overlay height-100">
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom">
+    <div class="container px-3">
+        <a class="navbar-brand logo" href="">
+            <img class="logo" src="/assets/images/logo_white.png" alt="" >
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link " href="#About">About</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link " href="#Service">Service</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link " href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div id="Header"  class="bg-header overlay height-100">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col header-text">
                     <h3>Welcome! I'm</h3>
                     <h1>Juan Morocho</h1>
                     <h4>Web Developer</h4>
                     <div class="py-3">
-                        <p>I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use
+                        <p>I work as interface and front end developer.I have passion for pixel perfect, minimal and easy to use
                             interfaces.
                         </p>
                     </div>
-                    <button type="button" class="btn btn-outline-light">Contact Me</button>
-                    <button type="button" class="btn btn-primary">Contact Me</button>
+                    <button type="button" class="btn btn-outline-light btn-wrk">My Work</button>
+                    <button type="button" class="btn btn-primary btn-cnt">Contact Me</button>
                 </div>
             </div>
         </div>
@@ -44,7 +72,7 @@
                     <h1>Myself</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit fugiat debitis dolore. Delectus sed provident
                         nisi possimus iste dolore aspernatur quo. Velit necessitatibus quos iste autem modi nihil adipisci amet?</p>
-                    <button type="button" class="btn btn-primary">Download CV</button>    
+                    <button type="button" class="btn btn-primary btn-cnt">Download CV</button>    
                 </div>
             </div>
         </div>
@@ -94,7 +122,7 @@
         </div>
     </div>
 
-    <div class="black-bg">
+    <div id="Skills" class="black-bg">
         <div class="container px-5">
             <div class="row justify-content-center py-4">
                 <div class="col-md-10 col-xs-12 text-center">
@@ -192,21 +220,46 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-md-4 py-3">
-                    <img class="port1" src="https://images.pexels.com/photos/682082/pexels-photo-682082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                </div>
-                <div class="col-md-4 py-3">
-                    <img class="port2"  src="https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                </div>
-                <div class="col-md-4 py-3">
-                    <img class="port3" src="https://images.pexels.com/photos/278779/pexels-photo-278779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  alt="">
-                </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="hovereffect">
+                            <img class="port1" src="https://images.pexels.com/photos/682082/pexels-photo-682082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="">
+                            <div class="overlay">
+                                <h2>Tomebamba | App</h2>
+                                <a class="info" target="_blank" href="https://play.google.com/store/apps/details?id=com.appTomebamba.radio">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="hovereffect">
+                            <img class="port2" src="https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="">
+                            <div class="overlay">
+                                <h2>PC Developers | Website</h2>
+                                <a class="info" href="https://pc-developers.com/" target="_blank">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3">
+                        <div class="hovereffect">
+                            <img class="port3" src="https://images.pexels.com/photos/278779/pexels-photo-278779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="">
+                            <div class="overlay">
+                                <h2>Bible App | Soon</h2>
+                                <a class="info" target="_blank" href="https://github.com/JMorocho23/Biblia">View</a>
+                            </div>
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>
 
 
-    <div id="Service" class="black-bg">
+    <div id="Contact" class="black-bg">
         <div class="container px-5">
             <div class="row justify-content-center py-4">
                 <div class="col-md-10 col-xs-12 text-center">
@@ -241,14 +294,14 @@
                             </div>                                             
                         </div>
                         <textarea name="message" id="cnt-msg" class="ctn-input" rows="2" placeholder="Your Message"></textarea>  
-                        <button type="submit" class="btn btn-primary my-3">Send</button>
+                        <button type="submit" class="btn btn-primary my-3 btn-wrk">Send</button>
                     </form>                     
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-basic">
+    <div id="Footer" class="footer-basic">
         <footer>
             <div class="social">
                 <a href="https://twitter.com/Anti_Clutch">
@@ -264,7 +317,7 @@
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Home</a>
+                    <a href="">Home</a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#About">About</a>
@@ -290,4 +343,16 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function () {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+
+    $(".nav .nav-link").on("click", function () {
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
+
+
+
