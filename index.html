@@ -54,8 +54,8 @@
                             interfaces.
                         </p>
                     </div>
-                    <button type="button" class="btn btn-outline-light btn-wrk">My Work</button>
-                    <button type="button" class="btn btn-primary btn-cnt">Contact Me</button>
+                    <a href="#Work" role="button" class="btn btn-outline-light btn-wrk">My Work</a>
+                    <a href="#Contact" role="button" class="btn btn-primary btn-cnt">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                     <h1>Myself</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit fugiat debitis dolore. Delectus sed provident
                         nisi possimus iste dolore aspernatur quo. Velit necessitatibus quos iste autem modi nihil adipisci amet?</p>
-                    <button type="button" class="btn btn-primary btn-cnt">Download CV</button>    
+                    <a href="/assets/Resume_CV.pdf" download="JMorocho23CV" role="button" class="btn btn-primary btn-cnt">Download CV</a>    
                 </div>
             </div>
         </div>
@@ -259,81 +259,59 @@
     </div>
 
 
-    <div id="Contact" class="black-bg">
-        <div class="container px-5">
-            <div class="row justify-content-center py-4">
-                <div class="col-md-10 col-xs-12 text-center">
-                    <h1>Contact</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit fugiat debitis dolore.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-xs-12">
-                    <ul class="cnt-ul">
-                        <li>
-                            <i class="fas fa-mobile py-3 mx-2"> </i> 
-                            <a> +593 98 418 1620</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope-open py-3 mx-2"></i>  
-                            <a>jc23ace@gmail.com</a>
-                        </li>
-                    </ul>                    
-                </div>
-                <div class="col-md-8 col-xs-12 py-3">
-                    <form id="contact-form"action="post" action="cform.php">
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <input name="name" type="text" class="form-control ctn-input" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <input name="email" type="email" class="form-control ctn-input" placeholder="Email">
-                            </div>         
-                            <div class="form-group col-md-4">
-                                <input name="subject" type="text" class="form-control ctn-input" placeholder="Subject">
-                            </div>                                             
-                        </div>
-                        <textarea name="message" id="cnt-msg" class="ctn-input" rows="2" placeholder="Your Message"></textarea>  
-                        <button type="submit" class="btn btn-primary my-3 btn-wrk" value="send message">Send</button>
-                    </form>                     
-                </div>
-            </div>
-        </div>
+    <div id="Contact" class="typeform-widget" data-url="https://juanmorocho.typeform.com/to/gB8K00" data-hide-headers=true data-hide-footer=true
+        style="width: 100%; height: 500px;">
     </div>
 
     <div id="Footer" class="footer-basic">
         <footer>
-            <div class="social">
-                <a href="https://twitter.com/Anti_Clutch">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://linkedin.com/in/jmorocho23/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/JMorocho23">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12 social py-3">
+                        <a href="https://twitter.com/Anti_Clutch">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jmorocho23/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/JMorocho23">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        <ul class="list-inline cnt-ul py-2">
+                            <li class="list-inline-item">
+                                <i class="fas fa-mobile py-3 mx-2"> </i>
+                                <a> +593 98 418 1620</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-envelope-open py-3 mx-2"></i>
+                                <a>jc23ace@gmail.com</a>
+                            </li>
+                        </ul>
     
+                    </div>
+                </div>
+                <ul class="list-inline fn">
+                    <li class="list-inline-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#About">About</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#Service">Service</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#Work">Work</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright">Juan Morocho © 2017</p>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="">Home</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#About">About</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#Service">Service</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#Work">Work</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-            <p class="copyright">Juan Morocho © 2017</p>
-        </footer>
+        </div>   
+    </footer>
     </div>
 
 
@@ -343,7 +321,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script type="text/javascript">
+<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+<script>
     $(window).scroll(function () {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
     });

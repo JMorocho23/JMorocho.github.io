@@ -335,7 +335,9 @@ h1,h4,h5,i{
 .cnt-ul{
     list-style: none;
     padding-left: 0;
+    font-size: 1rem !important;
 }
+
 
 #cnt-msg{
     height: 6em;
@@ -387,7 +389,7 @@ h1,h4,h5,i{
     opacity:1;
   }
   
-  .footer-basic ul a:hover {
+  .fn > li a:hover {
     border-bottom: 1px solid #fff;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
